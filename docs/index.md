@@ -1,17 +1,14 @@
-# Welcome to MkDocs
+# Aplicaciones Ofimáticas
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Bienvenido/a al espacio de **Aplicaciones Ofimáticas**.
 
-## Commands
+Aquí encontrareis los contenidos, explicaciones, actividades y recursos del módulo.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Contenidos
 
-## Project layout
+En esta web trabajaremos las siguientes herramientas:
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- **Writer:** procesamiento de textos.[Writer](writer/index.md)
+- **Calc:** hojas de cálculo.[Calc](calc/index.md)
+- **Impress:** creación de presentaciones.[Impress](impress/index.md)
+- **Base** gestión de bases de datos.[Base](base/index.md)
