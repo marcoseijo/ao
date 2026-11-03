@@ -1,5 +1,7 @@
 # Aplicaciones Ofimáticas
 
+![Aplicaciones Ofimáticas](assets/ao-portada.png)
+
 Bienvenido/a al espacio de **Aplicaciones Ofimáticas**.
 
 Aquí encontrareis los contenidos, explicaciones, actividades y recursos del módulo.
