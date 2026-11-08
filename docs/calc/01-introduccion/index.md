@@ -1,0 +1,6 @@
+- Interfaz: Personalizar Menús y Barras de herramientas.
+- Celdas, filas, columnas, rangos, hojas y libros.
+- Desplazamiento con teclado: Atajos.
+- Introducir datos en celdas. Tipos de formato de datos.
+- Alto-ancho, insertar-eliminar, ocultar-mostrar, combinar-dividir.
+- Fuentes, alineaciones, bordes, áreas,...

@@ -1,3 +1,4 @@
+
 site_name: Aplicaciones Ofimáticas
 site_description: Apuntes de Aplicaciones Ofimáticas by Marcos Eijo
 
@@ -6,7 +7,10 @@ nav:
   - Calc:
       - Calc: calc/index.md
       - 1. Introducción a Calc. Conceptos básicos: calc/01-introduccion/index.md
-      - 2. Fórmulas y funciones. La esencia de Calc: calc/02-formulas-funciones/index.md
+      - 2. Fórmulas y funciones. La esencia de Calc:
+          - Inicio: calc/02-formulas-funciones/index.md
+          - 2.1 Referencias relativas, absolutas y mixtas: calc/02-formulas-funciones/21-referencias.md
       - 3. Manejando datos. El conocimiento es poder: calc/03-manejando-datos/index.md
       - 4. Gráficos. Que quede bonito: calc/04-graficos/index.md
       - 5. Macros. Un poco de programación: calc/05-macros/index.md
+

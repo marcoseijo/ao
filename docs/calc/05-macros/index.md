@@ -1,0 +1,2 @@
+- Uso de patrones y asistentes para realizar distintos tipos de documentos.
+- Diseño y creación de macros.

@@ -1,0 +1,8 @@
+- Ordenar
+- Filtrar
+- Formato condicional
+- Formulario de datos, subtotales y validación.
+- Importar archivos .CSV
+- Tablas dinámicas
+- Preparar para impresión y exportación a .PDF
+- Inmovilizar paneles y dividir ventanas. Proteger los datos.

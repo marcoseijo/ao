@@ -1,0 +1,2 @@
+- Tipos, intervalos de datos, título, leyenda y ejes.
+- Personalización de gráficos 
