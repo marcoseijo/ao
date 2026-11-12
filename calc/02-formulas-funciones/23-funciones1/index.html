@@ -124,29 +124,29 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#1-funciones-logicas-y-matematicas" class="nav-link">📗 1. Funciones lógicas y matemáticas</a>
+            <li class="nav-item" data-bs-level="1"><a href="#23-funciones-aritmeticas-y-logicas" class="nav-link">2.3 Funciones aritméticas y lógicas</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#11-si" class="nav-link">1.1. SI</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#12-y" class="nav-link">1.2. Y</a>
+            <li class="nav-item" data-bs-level="2"><a href="#1-si" class="nav-link">1. SI</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#13-o" class="nav-link">1.3. O</a>
+            <li class="nav-item" data-bs-level="2"><a href="#2-y" class="nav-link">2. Y</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#14-suma" class="nav-link">1.4. SUMA</a>
+            <li class="nav-item" data-bs-level="2"><a href="#3-o" class="nav-link">3. O</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#15-sumarsi" class="nav-link">1.5. SUMAR.SI</a>
+            <li class="nav-item" data-bs-level="2"><a href="#4-suma" class="nav-link">4. SUMA</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#16-sumarsiconjunto" class="nav-link">1.6. SUMAR.SI.CONJUNTO</a>
+            <li class="nav-item" data-bs-level="2"><a href="#5-sumarsi" class="nav-link">5. SUMAR.SI</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#6-sumarsiconjunto" class="nav-link">6. SUMAR.SI.CONJUNTO</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -157,62 +157,62 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="1-funciones-logicas-y-matematicas">📗 1. Funciones lógicas y matemáticas</h1>
-<h2 id="11-si">1.1. SI</h2>
+<h1 id="23-funciones-aritmeticas-y-logicas">2.3 Funciones aritméticas y lógicas</h1>
+<h2 id="1-si">1. SI</h2>
 <p><strong>Tipo:</strong> Lógica</p>
 <p>Permite comprobar una condición y devolver un resultado si se cumple y otro si no se cumple.</p>
 <p><strong>Sintaxis general:</strong></p>
-<pre><code class="language-excel">=SI(prueba_lógica; valor_si_verdadero; valor_si_falso)
+<pre><code class="language-calc">=SI(prueba_lógica; valor_si_verdadero; valor_si_falso)
 </code></pre>
 <p><strong>Ejemplo práctico:</strong></p>
-<pre><code class="language-excel">=SI(B2&gt;=5; &quot;Aprobado&quot;; &quot;Suspenso&quot;)
+<pre><code class="language-calc">=SI(B2&gt;=5; &quot;Aprobado&quot;; &quot;Suspenso&quot;)
 </code></pre>
 <ul>
 <li>Si B2 es mayor o igual que 5 → devuelve «Aprobado».</li>
 <li>Si B2 es menor que 5 → devuelve «Suspenso».</li>
 </ul>
-<h2 id="12-y">1.2. Y</h2>
+<h2 id="2-y">2. Y</h2>
 <p><strong>Tipo:</strong> Lógica</p>
 <p>Comprueba varias condiciones y devuelve VERDADERO únicamente si <strong>todas se cumplen</strong>.</p>
 <p><strong>Sintaxis general:</strong></p>
-<pre><code class="language-excel">=Y(valor_lógico1; valor_lógico2; ...)
+<pre><code class="language-calc">=Y(valor_lógico1; valor_lógico2; ...)
 </code></pre>
 <p><strong>Ejemplo práctico:</strong></p>
-<pre><code class="language-excel">=Y(B2&gt;=5; C2&gt;=5)
+<pre><code class="language-calc">=Y(B2&gt;=5; C2&gt;=5)
 </code></pre>
 <ul>
 <li>Si B2 y C2 son mayores o iguales que 5 → VERDADERO.</li>
 <li>Si alguna de las dos condiciones no se cumple → FALSO.</li>
 </ul>
-<h2 id="13-o">1.3. O</h2>
+<h2 id="3-o">3. O</h2>
 <p><strong>Tipo:</strong> Lógica</p>
 <p>Comprueba varias condiciones y devuelve VERDADERO si <strong>al menos una se cumple</strong>.</p>
 <p><strong>Sintaxis general:</strong></p>
-<pre><code class="language-excel">=O(valor_lógico1; valor_lógico2; ...)
+<pre><code class="language-calc">=O(valor_lógico1; valor_lógico2; ...)
 </code></pre>
 <p><strong>Ejemplo práctico:</strong></p>
-<pre><code class="language-excel">=O(B2&gt;=5; C2&gt;=5)
+<pre><code class="language-calc">=O(B2&gt;=5; C2&gt;=5)
 </code></pre>
 <ul>
 <li>Si B2 o C2 (o ambas) son mayores o iguales que 5 → VERDADERO.</li>
 <li>Si ninguna cumple la condición → FALSO.</li>
 </ul>
-<h2 id="14-suma">1.4. SUMA</h2>
+<h2 id="4-suma">4. SUMA</h2>
 <p><strong>Tipo:</strong> Matemática</p>
 <p>Suma todos los valores numéricos indicados.</p>
 <p><strong>Sintaxis general:</strong></p>
-<pre><code class="language-excel">=SUMA(número1; número2; ...)
+<pre><code class="language-calc">=SUMA(número1; número2; ...)
 </code></pre>
 <p>También admite rangos de celdas.</p>
 <p><strong>Ejemplo práctico:</strong></p>
-<pre><code class="language-excel">=SUMA(B2:B10)
+<pre><code class="language-calc">=SUMA(B2:B10)
 </code></pre>
 <p>Suma todos los valores numéricos comprendidos entre B2 y B10.</p>
-<h2 id="15-sumarsi">1.5. SUMAR.SI</h2>
+<h2 id="5-sumarsi">5. SUMAR.SI</h2>
 <p><strong>Tipo:</strong> Matemática</p>
 <p>Suma los valores de un rango únicamente cuando cumplen una condición.</p>
 <p><strong>Sintaxis general:</strong></p>
-<pre><code class="language-excel">=SUMAR.SI(rango; criterio; rango_suma)
+<pre><code class="language-calc">=SUMAR.SI(rango; criterio; rango_suma)
 </code></pre>
 <ul>
 <li><code>rango</code>: celdas donde se comprueba la condición.</li>
@@ -220,27 +220,19 @@
 <li><code>rango_suma</code>: celdas cuyos valores se sumarán.</li>
 </ul>
 <p><strong>Ejemplo práctico:</strong></p>
-<pre><code class="language-excel">=SUMAR.SI(A2:A10; &quot;Deportivo&quot;; B2:B10)
+<pre><code class="language-calc">=SUMAR.SI(A2:A10; &quot;Deportivo&quot;; B2:B10)
 </code></pre>
 <p>Suma los importes de B2:B10 únicamente cuando la celda correspondiente de A2:A10 contiene «Deportivo».</p>
-<h2 id="16-sumarsiconjunto">1.6. SUMAR.SI.CONJUNTO</h2>
+<h2 id="6-sumarsiconjunto">6. SUMAR.SI.CONJUNTO</h2>
 <p><strong>Tipo:</strong> Matemática</p>
 <p>Suma valores que cumplen <strong>varias condiciones simultáneamente</strong>.</p>
 <p><strong>Sintaxis general:</strong></p>
-<pre><code class="language-excel">=SUMAR.SI.CONJUNTO(rango_suma; rango_criterios1; criterio1; rango_criterios2; criterio2; ...)
+<pre><code class="language-calc">=SUMAR.SI.CONJUNTO(rango_suma; rango_criterios1; criterio1; rango_criterios2; criterio2; ...)
 </code></pre>
 <ul>
 <li><code>rango_suma</code>: celdas cuyos valores se sumarán.</li>
 <li><code>rango_criterios</code>: celdas donde se comprobarán las condiciones.</li>
 <li><code>criterio</code>: condición que debe cumplirse.</li>
-</ul>
-<p><strong>Ejemplo práctico:</strong></p>
-<pre><code class="language-excel">=SUMAR.SI.CONJUNTO(C2:C10; A2:A10; &quot;Deportivo&quot;; B2:B10; &quot;Local&quot;)
-</code></pre>
-<p>Suma los importes de C2:C10 cuando se cumplen las dos condiciones:</p>
-<ul>
-<li>La columna A contiene «Deportivo».</li>
-<li>La columna B contiene «Local».</li>
 </ul>
 <hr /></div>
             </div>

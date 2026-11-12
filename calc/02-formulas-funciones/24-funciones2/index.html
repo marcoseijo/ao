@@ -124,33 +124,28 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#2-funciones-de-recuento" class="nav-link">📘 2. Funciones de recuento</a>
+            <li class="nav-item" data-bs-level="1"><a href="#24-funciones-de-recuento" class="nav-link">2.4 Funciones de recuento</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#21-contar" class="nav-link">2.1. CONTAR</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#22-contara" class="nav-link">2.2. CONTARA</a>
+            <li class="nav-item" data-bs-level="2"><a href="#1-contar" class="nav-link">1. CONTAR</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#23-contarsi" class="nav-link">2.3. CONTAR.SI</a>
+            <li class="nav-item" data-bs-level="2"><a href="#2-contara" class="nav-link">2. CONTARA</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#24-contarsiconjunto" class="nav-link">2.4. CONTAR.SI.CONJUNTO</a>
+            <li class="nav-item" data-bs-level="2"><a href="#3-contarsi" class="nav-link">3. CONTAR.SI</a>
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-bs-level="2"><a href="#4-contarsiconjunto" class="nav-link">4. CONTAR.SI.CONJUNTO</a>
+              <ul class="nav flex-column">
               </ul>
             </li>
-            
-            <li class="nav-item" data-bs-level="1"><a href="#3-resumen-rapido-que-funcion-utilizo" class="nav-link">🧠 3. Resumen rápido: ¿qué función utilizo?</a>
-              <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-bs-level="1"><a href="#4-cuatro-cosas-que-debemos-recordar" class="nav-link">⚠️ 4. Cuatro cosas que debemos recordar</a>
+            <li class="nav-item" data-bs-level="1"><a href="#resumen-rapido-que-funcion-utilizo" class="nav-link">🧠 Resumen rápido: ¿qué función utilizo?</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -159,67 +154,58 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="2-funciones-de-recuento">📘 2. Funciones de recuento</h1>
-<h2 id="21-contar">2.1. CONTAR</h2>
+<h1 id="24-funciones-de-recuento">2.4 Funciones de recuento</h1>
+<h2 id="1-contar">1. CONTAR</h2>
 <p><strong>Tipo:</strong> Recuento</p>
 <p>Cuenta cuántas celdas contienen valores numéricos dentro de un rango.</p>
 <p><strong>Sintaxis general:</strong></p>
-<pre><code class="language-excel">=CONTAR(valor1; valor2; ...)
+<pre><code class="language-calc">=CONTAR(valor1; valor2; ...)
 </code></pre>
 <p><strong>Ejemplo práctico:</strong></p>
-<pre><code class="language-excel">=CONTAR(B2:B10)
+<pre><code class="language-calc">=CONTAR(B2:B10)
 </code></pre>
 <p>Cuenta cuántas celdas del rango B2:B10 contienen números.</p>
 <p><strong>Importante:</strong> no cuenta las celdas vacías ni las que contienen texto.</p>
-<h2 id="22-contara">2.2. CONTARA</h2>
+<h2 id="2-contara">2. CONTARA</h2>
 <p><strong>Tipo:</strong> Recuento</p>
 <p>Cuenta cuántas celdas contienen algún tipo de dato (números, texto, fechas, etc.).</p>
 <p><strong>Sintaxis general:</strong></p>
-<pre><code class="language-excel">=CONTARA(valor1; valor2; ...)
+<pre><code class="language-calc">=CONTARA(valor1; valor2; ...)
 </code></pre>
 <p><strong>Ejemplo práctico:</strong></p>
-<pre><code class="language-excel">=CONTARA(A2:A10)
+<pre><code class="language-calc">=CONTARA(A2:A10)
 </code></pre>
 <p>Cuenta cuántas celdas del rango A2:A10 no están vacías.</p>
 <p><strong>Importante:</strong> a diferencia de CONTAR, también cuenta las celdas que contienen texto.</p>
-<h2 id="23-contarsi">2.3. CONTAR.SI</h2>
+<h2 id="3-contarsi">3. CONTAR.SI</h2>
 <p><strong>Tipo:</strong> Recuento</p>
 <p>Cuenta cuántas celdas cumplen una condición determinada.</p>
 <p><strong>Sintaxis general:</strong></p>
-<pre><code class="language-excel">=CONTAR.SI(rango; criterio)
+<pre><code class="language-calc">=CONTAR.SI(rango; criterio)
 </code></pre>
 <ul>
 <li><code>rango</code>: celdas donde se comprobará la condición.</li>
 <li><code>criterio</code>: condición que deben cumplir las celdas.</li>
 </ul>
 <p><strong>Ejemplo práctico:</strong></p>
-<pre><code class="language-excel">=CONTAR.SI(B2:B20; &quot;&gt;=5&quot;)
+<pre><code class="language-calc">=CONTAR.SI(B2:B20; &quot;&gt;=5&quot;)
 </code></pre>
 <p>Cuenta cuántas celdas del rango B2:B20 contienen un valor mayor o igual que 5.</p>
 <p>Otro ejemplo:</p>
-<pre><code class="language-excel">=CONTAR.SI(A2:A20; &quot;Deportivo&quot;)
+<pre><code class="language-calc">=CONTAR.SI(A2:A20; &quot;Victoria&quot;)
 </code></pre>
-<p>Cuenta cuántas veces aparece «Deportivo» en el rango A2:A20.</p>
-<h2 id="24-contarsiconjunto">2.4. CONTAR.SI.CONJUNTO</h2>
+<p>Cuenta cuántas veces aparece «Victoria» en el rango A2:A20.</p>
+<h2 id="4-contarsiconjunto">4. CONTAR.SI.CONJUNTO</h2>
 <p><strong>Tipo:</strong> Recuento</p>
 <p>Cuenta cuántas filas cumplen <strong>varias condiciones simultáneamente</strong>.</p>
 <p><strong>Sintaxis general:</strong></p>
-<pre><code class="language-excel">=CONTAR.SI.CONJUNTO(rango_criterios1; criterio1; rango_criterios2; criterio2; ...)
+<pre><code class="language-calc">=CONTAR.SI.CONJUNTO(rango_criterios1; criterio1; rango_criterios2; criterio2; ...)
 </code></pre>
 <ul>
 <li><code>rango_criterios</code>: celdas donde se comprobarán las condiciones.</li>
 <li><code>criterio</code>: condición que deben cumplir.</li>
 </ul>
-<p><strong>Ejemplo práctico:</strong></p>
-<pre><code class="language-excel">=CONTAR.SI.CONJUNTO(A2:A20; &quot;Deportivo&quot;; B2:B20; &quot;Local&quot;)
-</code></pre>
-<p>Cuenta cuántas filas cumplen las dos condiciones:</p>
-<ul>
-<li>La columna A contiene «Deportivo».</li>
-<li>La columna B contiene «Local».</li>
-</ul>
-<hr />
-<h1 id="3-resumen-rapido-que-funcion-utilizo">🧠 3. Resumen rápido: ¿qué función utilizo?</h1>
+<h1 id="resumen-rapido-que-funcion-utilizo">🧠 Resumen rápido: ¿qué función utilizo?</h1>
 <table>
 <thead>
 <tr>
@@ -270,14 +256,6 @@
 </tr>
 </tbody>
 </table>
-<hr />
-<h1 id="4-cuatro-cosas-que-debemos-recordar">⚠️ 4. Cuatro cosas que debemos recordar</h1>
-<ol>
-<li><strong>Separador:</strong> utilizamos <code>;</code> para separar los argumentos de las funciones.</li>
-<li><strong>Texto:</strong> los criterios de texto se escriben entre comillas: <code>"Deportivo"</code>.</li>
-<li><strong>Operadores:</strong> podemos utilizar <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code>, <code>=</code> y <code>&lt;&gt;</code> (distinto de).</li>
-<li><strong>Varias condiciones:</strong> en las funciones <code>SUMAR.SI.CONJUNTO</code> y <code>CONTAR.SI.CONJUNTO</code>, todas las condiciones deben cumplirse simultáneamente (AND).</li>
-</ol>
 <hr /></div>
             </div>
         </div>
