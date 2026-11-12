@@ -1,6 +1,6 @@
 - [Referencias: relativa, absoluta y mixta. Rellenar](21-referencias.md)
 - Operadores básicos: aritméticos, comparación(boolean) y texto.
-- Funciones: Si - Y - O - SUMA - SUMAR.SI - SUMAR.SI.CONJUNTO
-- Funciones: CONTAR - CONTARA - CONTAR.SI - CONTAR.SI.CONJUNTO
-- Funciones: PROMEDIO - DESVEST - MEDIANA - MODA.UNO - MÁX - MÍN
-- Funciones: BUSCAR - BUSCARV - BUSCARH - COINCIDIR
+- Funciones I: Si - Y - O - SUMA - SUMAR.SI - SUMAR.SI.CONJUNTO
+- Funciones II: CONTAR - CONTARA - CONTAR.SI - CONTAR.SI.CONJUNTO
+- Funciones III: PROMEDIO - DESVEST - MEDIANA - MODA.UNO - MÁX - MÍN
+- Funciones IV: BUSCAR - BUSCARV - BUSCARH - COINCIDIR
