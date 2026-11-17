@@ -1,2 +1,4 @@
-Operadores básicos
+# 2.1. Operadores básicos
+
+
 +, * , / , ^, %
