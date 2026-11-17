@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>🔎 Funciones de búsqueda: BUSCAR, BUSCARV, BUSCARH y COINCIDIR - Aplicaciones Ofimáticas</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Aplicaciones Ofimáticas</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../.." class="nav-link">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Calc</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">Calc</a>
+</li>
+                                    
+<li>
+    <a href="../../01-introduccion/" class="dropdown-item">1. Introducción a Calc. Conceptos básicos</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">2. Fórmulas y funciones. La esencia de Calc</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Inicio</a>
+</li>
+            
+<li>
+    <a href="../21-referencias/" class="dropdown-item">2.1 Referencias relativas, absolutas y mixtas</a>
+</li>
+            
+<li>
+    <a href="../22-operadores/" class="dropdown-item">2.2 Operadores básicos aritméticos, comparación (boolean)</a>
+</li>
+            
+<li>
+    <a href="../23-funciones1/" class="dropdown-item">2.3 Funciones I</a>
+</li>
+            
+<li>
+    <a href="../24-funciones2/" class="dropdown-item">2.4 Funciones II</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../03-manejando-datos/" class="dropdown-item">3. Manejando datos. El conocimiento es poder</a>
+</li>
+                                    
+<li>
+    <a href="../../04-graficos/" class="dropdown-item">4. Gráficos. Que quede bonito</a>
+</li>
+                                    
+<li>
+    <a href="../../05-macros/" class="dropdown-item">5. Macros. Un poco de programación</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#funciones-de-busqueda-buscar-buscarv-buscarh-y-coincidir" class="nav-link">🔎 Funciones de búsqueda: BUSCAR, BUSCARV, BUSCARH y COINCIDIR</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#1-buscar" class="nav-link">1. BUSCAR()</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#2-buscarv" class="nav-link">2. BUSCARV()</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#3-buscarh" class="nav-link">3. BUSCARH()</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#4-coincidir" class="nav-link">4. COINCIDIR()</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#un-paso-mas-combinando-funciones" class="nav-link">🏆 Un paso más: combinando funciones</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#resumen-que-funcion-utilizamos" class="nav-link">🧠 Resumen: ¿qué función utilizamos?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="funciones-de-busqueda-buscar-buscarv-buscarh-y-coincidir">🔎 Funciones de búsqueda: BUSCAR, BUSCARV, BUSCARH y COINCIDIR</h1>
+<p>Las funciones de búsqueda permiten localizar información dentro de una tabla y recuperar datos relacionados con ella.</p>
+<p>Imagina que tenemos un libro de Calc con las estadísticas del <strong>Deportivo de La Coruña</strong>: jugadores, partidos, goles, asistencias y puntos. En lugar de recorrer toda la tabla manualmente, podemos utilizar estas funciones para encontrar rápidamente lo que necesitamos.</p>
+<h2 id="1-buscar">1. BUSCAR()</h2>
+<p>Busca un valor dentro de un rango y devuelve el dato correspondiente de otro rango.</p>
+<p><strong>Sintaxis:</strong></p>
+<pre><code class="language-calc">=BUSCAR(valor_buscado; vector_búsqueda; vector_resultado)
+</code></pre>
+<ul>
+<li><code>valor_buscado</code>: el dato que queremos encontrar.</li>
+<li><code>vector_búsqueda</code>: dónde queremos buscarlo.</li>
+<li><code>vector_resultado</code>: de dónde queremos obtener el resultado.</li>
+</ul>
+<p><strong>Ejemplo:</strong></p>
+<p>Imagina que tenemos una tabla con los dorsales y nombres de los jugadores:</p>
+<table>
+<thead>
+<tr>
+<th>A (Dorsal)</th>
+<th>B (Jugador)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7</td>
+<td>Lucas</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Yeremay</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Mella</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Barbero</td>
+</tr>
+</tbody>
+</table>
+<p>Si queremos saber qué jugador tiene el dorsal 10:</p>
+<pre><code class="language-calc">=BUSCAR(10;A2:A5;B2:B5)
+</code></pre>
+<p><strong>Resultado:</strong> Yeremay.</p>
+<p>Importante: BUSCAR trabaja con búsqueda aproximada y requiere que el vector de búsqueda esté ordenado de menor a mayor. No es la mejor opción cuando necesitamos una coincidencia exacta.</p>
+<h2 id="2-buscarv">2. BUSCARV()</h2>
+<p>La V significa <em>vertical</em>. Busca un valor en la primera columna de una tabla y devuelve un dato de otra columna de la misma fila.</p>
+<p><strong>Sintaxis:</strong></p>
+<pre><code class="language-calc">=BUSCARV(valor_buscado; matriz; indicador_columna; ordenado)
+</code></pre>
+<ul>
+<li><code>valor_buscado</code>: el dato que queremos localizar.</li>
+<li><code>matriz</code>: el rango completo de la tabla.</li>
+<li><code>indicador_columna</code>: número de la columna de la que queremos obtener el resultado (empezando por 1).</li>
+<li><code>ordenado</code>: 0 para coincidencia exacta; 1 para búsqueda aproximada.</li>
+</ul>
+<p><strong>Ejemplo:</strong></p>
+<p>En nuestro libro del Deportivo tenemos esta tabla:</p>
+<table>
+<thead>
+<tr>
+<th>A (Jugador)</th>
+<th style="text-align: right;">B (Goles)</th>
+<th style="text-align: right;">C (Asistencias)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lucas</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td>Yeremay</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td>Mella</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td>Barbero</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">2</td>
+</tr>
+</tbody>
+</table>
+<p>Queremos saber cuántos goles ha marcado Yeremay:</p>
+<pre><code class="language-calc">=BUSCARV(&quot;Yeremay&quot;;A2:C5;2;0)
+</code></pre>
+<p><strong>Resultado:</strong> 12.</p>
+<p>¿Y si queremos conocer sus asistencias?</p>
+<pre><code class="language-calc">=BUSCARV(&quot;Yeremay&quot;;A2:C5;3;0)
+</code></pre>
+<p><strong>Resultado:</strong> 7.</p>
+<p>Recuerda: BUSCARV siempre busca en la primera columna del rango seleccionado y devuelve información situada a su derecha.</p>
+<h2 id="3-buscarh">3. BUSCARH()</h2>
+<p>La H significa <em>horizontal</em>. Funciona igual que BUSCARV, pero en lugar de buscar en la primera columna, busca en la primera fila de una tabla.</p>
+<p><strong>Sintaxis:</strong></p>
+<pre><code class="language-calc">=BUSCARH(valor_buscado; matriz; indicador_fila; ordenado)
+</code></pre>
+<ul>
+<li><code>valor_buscado</code>: el dato que queremos localizar.</li>
+<li><code>matriz</code>: el rango completo de la tabla.</li>
+<li><code>indicador_fila</code>: número de la fila de la que queremos obtener el resultado (empezando por 1).</li>
+<li><code>ordenado</code>: 0 para coincidencia exacta; 1 para búsqueda aproximada.</li>
+</ul>
+<p><strong>Ejemplo:</strong></p>
+<p>Imagina que organizamos las estadísticas del Deportivo de forma horizontal:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Lucas</td>
+<td>Yeremay</td>
+<td>Mella</td>
+<td>Barbero</td>
+</tr>
+<tr>
+<td>2</td>
+<td>8</td>
+<td>12</td>
+<td>5</td>
+<td>9</td>
+</tr>
+<tr>
+<td>3</td>
+<td>4</td>
+<td>7</td>
+<td>6</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p>Queremos conocer los goles de Yeremay:</p>
+<pre><code class="language-calc">=BUSCARH(&quot;Yeremay&quot;;B1:D3;2;0)
+</code></pre>
+<p><strong>Resultado:</strong> 12.</p>
+<p>Si queremos conocer sus asistencias:</p>
+<pre><code class="language-calc">=BUSCARH(&quot;Yeremay&quot;;B1:D3;3;0)
+</code></pre>
+<p><strong>Resultado:</strong> 7.</p>
+<p>Recuerda: BUSCARH busca en la primera fila y devuelve información situada en las filas inferiores.</p>
+<h2 id="4-coincidir">4. COINCIDIR()</h2>
+<p>Esta función es un poco diferente. No devuelve el dato que estamos buscando, sino la posición que ocupa dentro de un rango.</p>
+<p><strong>Sintaxis:</strong></p>
+<pre><code class="language-calc">=COINCIDIR(valor_buscado; matriz_búsqueda; tipo)
+</code></pre>
+<ul>
+<li><code>valor_buscado</code>: el dato que queremos localizar.</li>
+<li><code>matriz_búsqueda</code>: el rango donde buscamos.</li>
+<li><code>tipo</code>: 0 para coincidencia exacta; 1 para búsqueda aproximada ascendente; -1 para búsqueda aproximada descendente.</li>
+</ul>
+<p><strong>Ejemplo:</strong></p>
+<p>Tenemos una lista de jugadores:</p>
+<table>
+<thead>
+<tr>
+<th>A (Posición)</th>
+<th>B (Jugador)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Lucas</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Yeremay</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Mella</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Barbero</td>
+</tr>
+</tbody>
+</table>
+<p>Queremos saber en qué posición aparece Yeremay dentro de la lista:</p>
+<pre><code class="language-calc">=COINCIDIR(&quot;Yeremay&quot;;B2:B5;0)
+</code></pre>
+<p><strong>Resultado:</strong> 2.</p>
+<p>¡Ojo! El resultado es 2 porque Yeremay ocupa la segunda posición del rango, no porque tenga el dorsal 2.</p>
+<h2 id="un-paso-mas-combinando-funciones">🏆 Un paso más: combinando funciones</h2>
+<p>Lo interesante empieza cuando combinamos varias funciones.</p>
+<p>Imagina que queremos saber en qué asignatura ha conseguido un alumno su mejor nota, o en qué estadística destaca un jugador del Deportivo.</p>
+<p>Podemos utilizar <code>MAX()</code> para encontrar el valor máximo y <code>COINCIDIR()</code> para averiguar en qué posición se encuentra.</p>
+<p>Por ejemplo, tenemos las estadísticas de Yeremay:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">AO</th>
+<th style="text-align: right;">IPE</th>
+<th style="text-align: right;">SOM</th>
+<th style="text-align: right;">MM</th>
+<th style="text-align: right;">REDES</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Yeremay</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">7</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Paso 1.</strong> Encontramos su mejor nota:</p>
+<pre><code class="language-calc">=MAX(C2:G2)
+</code></pre>
+<p>Resultado: 9.</p>
+<p><strong>Paso 2.</strong> Averiguamos en qué posición está esa nota:</p>
+<pre><code class="language-calc">=COINCIDIR(MAX(C2:G2);C2:G2;0)
+</code></pre>
+<p>Resultado: 4.</p>
+<p>La posición 4 corresponde a MM.</p>
+<p>Así conseguimos localizar no solo el valor más alto, sino también dónde se encuentra.</p>
+<hr />
+<h2 id="resumen-que-funcion-utilizamos">🧠 Resumen: ¿qué función utilizamos?</h2>
+<table>
+<thead>
+<tr>
+<th>Función</th>
+<th>¿Qué hace?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>BUSCAR</code></td>
+<td>Busca un valor y devuelve otro relacionado.</td>
+</tr>
+<tr>
+<td><code>BUSCARV</code></td>
+<td>Busca verticalmente (por columnas).</td>
+</tr>
+<tr>
+<td><code>BUSCARH</code></td>
+<td>Busca horizontalmente (por filas).</td>
+</tr>
+<tr>
+<td><code>COINCIDIR</code></td>
+<td>Devuelve la posición de un valor.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>La idea clave:</strong> BUSCAR, BUSCARV y BUSCARH nos permiten recuperar información. COINCIDIR nos dice dónde se encuentra.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

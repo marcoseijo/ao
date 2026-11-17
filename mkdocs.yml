@@ -13,6 +13,7 @@ nav:
           - "2.2 Operadores básicos aritméticos, comparación (boolean)": calc/02-formulas-funciones/22-operadores.md
           - "2.3 Funciones I": calc/02-formulas-funciones/23-funciones1.md
           - "2.4 Funciones II": calc/02-formulas-funciones/24-funciones2.md
+          - "2.5 Funciones III": calc/02-formulas-funciones/25-funciones3.md
       - "3. Manejando datos. El conocimiento es poder": calc/03-manejando-datos/index.md
       - "4. Gráficos. Que quede bonito": calc/04-graficos/index.md
       - "5. Macros. Un poco de programación": calc/05-macros/index.md
